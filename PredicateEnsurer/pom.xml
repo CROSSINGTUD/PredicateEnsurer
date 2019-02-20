@@ -1,0 +1,33 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>de.predicateensurer</groupId>
+	<artifactId>PredicateEnsurer</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.sonatype.plugins</groupId>
+				<artifactId>nexus-staging-maven-plugin</artifactId>
+				<version>1.6.8</version>
+				<extensions>true</extensions>
+				<configuration>
+					<serverId>soot-snapshot</serverId>
+					<nexusUrl>https://soot-build.cs.uni-paderborn.de/nexus/repository/soot-snapshot</nexusUrl>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	
+	<distributionManagement>
+		<repository>
+			<uniqueVersion>true</uniqueVersion>
+			<id>soot-snapshot</id>
+			<name>Soot snapshot repository</name>
+			<url>https://soot-build.cs.uni-paderborn.de/nexus/repository/soot-snapshot</url>
+			<layout>default</layout>
+		</repository>
+	</distributionManagement>
+</project>
