@@ -1,4 +1,4 @@
-package de.predicateensurer;
+package de.upb.cognicrypt.predicateensurer;
 
 public class CC {
 	/**
