@@ -5,6 +5,7 @@
 	<groupId>de.upb.cognicrypt.predicateensurer</groupId>
 	<artifactId>PredicateEnsurer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
 	
 	<build>
 		<plugins>
